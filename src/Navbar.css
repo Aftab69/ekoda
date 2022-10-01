@@ -1,0 +1,113 @@
+*{
+    box-sizing: border-box;
+}
+nav{
+    width: 100%;
+    min-height: 10vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter Tight', sans-serif;
+}
+.logoContainer{
+    width: 20%;
+    min-height: 10vh;
+    margin-left: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.linksContainer{
+    width: 60%;
+    min-height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sociallinksContainer{
+    width: 20%;
+    min-height: 10vh;
+    margin-right: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+span{
+    margin: 10px;
+    color: white;
+}
+span:hover{
+    cursor: pointer;
+    color: rgb(221, 221, 221);
+}
+.hamburger{
+    display: none;
+    margin-right: 20px;
+}
+.bar{
+    display: block;
+    background-color: white;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+}
+@keyframes growDown {
+    0% {
+        transform: scaleY(0)
+    }
+    80% {
+        transform: scaleY(1.1)
+    }
+    100% {
+        transform: scaleY(1)
+    }
+}
+.hamburgermenuContainer{
+    animation: growDown 300ms ease-in-out;
+    transform-origin: top center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.678);
+    color: white;
+    font-family: 'Inter Tight', sans-serif;
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+}
+@media only screen and (max-width:768px){
+    nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    .linksContainer{
+        display: none;
+    }
+    .sociallinksContainer{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+        cursor: pointer;
+    }
+}
+@media only screen and (min-width: 1921px) and (max-width: 2880px){
+    *{
+        font-size: 1.25rem;
+    }
+    img{
+        height: 75px;
+    }
+}
+@media only screen and (min-width: 2881px){
+    *{
+        font-size: 1.5rem;
+    }
+    img{
+        height: 100px;
+    }
+}

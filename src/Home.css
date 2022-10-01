@@ -1,0 +1,24 @@
+.homepageContainer{
+    width: 100%;
+    height: 90vh;
+}
+.homepageContainer>video{
+    width: 100%;
+    height: 90vh;
+    object-fit: cover;
+}
+@media only screen and (max-width:1080px){
+    .homepageContainer>video{
+        width: 200%;
+        height: 80vh;
+        object-fit: contain;
+    }
+    .homepageContainer{
+        background-image: url("./Images/homepagebackground.jpg");
+        background-size: cover;
+        height: 82.5vh;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+    }
+}
