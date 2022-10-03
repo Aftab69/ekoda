@@ -1,6 +1,10 @@
+*{
+    box-sizing: border-box;
+}
 .projectspageContainer{
     width: 100%;
     min-height: 100vh;
+    padding-bottom: 10px;
     background-image: url("./Images/projectspagebackground.jpg");
     background-size: cover;
     font-family: 'Inter Tight', sans-serif;
@@ -8,6 +12,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 .projectspageHeading{
     width: 100%;

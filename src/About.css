@@ -1,0 +1,98 @@
+*{
+    box-sizing: border-box;
+}
+.aboutpageContainer{
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Inter Tight', sans-serif;
+}
+.aboutpageHeading{
+    padding-top: 10px;
+    width: 100%;
+    min-height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.aboutpageHeading>span{
+    background: black;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 8px #5a4f4f;
+}
+#background1{
+    background-image: url("./Images/aboutpagebackground1.jpg");
+    background-size: cover;
+    transition: all 1s ease-in-out;
+}
+#background2{
+    background-image: url("./Images/aboutpagebackground2.jpg");
+    background-size: cover;
+    transition: all 1s ease-in-out;
+}
+.aboutpageText{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aboutpagetext1{
+    border-radius: 10px ;
+    margin-left: -50vw;
+    padding: 20px;
+    font-size: 1.5rem;
+    width: 25vw;
+    background-color: rgb(83, 83, 83);
+    color: white;
+    transition: all 1s ease-in-out;
+    box-shadow: 7.5px 7.5px 8px #888888;
+}
+.aboutpagetext2{
+    border-radius: 10px ;
+    margin-left: 50vw;
+    padding: 20px;
+    font-size: 1.5rem;
+    width: 25vw;
+    background-color: white;
+    transition: all 1s ease-in-out;
+    box-shadow: 7.5px 7.5px 8px #3d2c63;
+}
+
+@media only screen and (min-width:769px) and (max-width:1080px) {
+    .aboutpagetext1{
+        width: 50vw;
+        margin-left: 0;
+    }
+    .aboutpagetext2{
+        width: 50vw;
+        margin-left: 0;
+    }
+}
+@media only screen and (min-width:481px) and (max-width:768px) {
+    .aboutpagetext1{
+        width: 75vw;
+        margin-left: 0;
+        font-size: 1.25rem;
+    }
+    .aboutpagetext2{
+        width: 75vw;
+        margin-left: 0;
+        font-size: 1.25rem;
+    }
+}
+@media only screen and (max-width:480px) {
+    .aboutpagetext1{
+        width: 90vw;
+        margin-left: 0;
+        font-size: 1rem;
+    }
+    .aboutpagetext2{
+        width: 90vw;
+        margin-left: 0;
+        font-size: 1rem;
+    }
+}
