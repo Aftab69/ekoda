@@ -17,6 +17,8 @@ import article4 from "./Images/article4.png"
 
 const About = () => {
   const [ background, setBackground ] = useState("background1")
+  const [ image, setImage ] = useState()
+  const [ popupdisplay, setPopupdisplay ] = useState({display:"none"})
 
   useEffect(() => {
     setInterval(() => {
@@ -26,6 +28,28 @@ const About = () => {
       setBackground("background1");
     }, 16000);
   }, []);
+
+  const handleAchievementpopup = (e) =>{
+    e.preventDefault();
+    setPopupdisplay({display:"flex"})
+    setImage(e.target.name)
+    disableScrolling()
+  }
+  const handleClosepopup = (e) =>{
+    e.preventDefault();
+    setPopupdisplay({display:"none"})
+    enableScrolling()
+  }
+  const disableScrolling = () =>{
+    var x=window.scrollX;
+    var y=window.scrollY;
+    window.onscroll=function(){window.scrollTo(x, y);};
+}
+
+  const enableScrolling = () =>{
+    window.onscroll=function(){};
+}
+
   return (
     <>
     <div id='about'>
@@ -69,12 +93,12 @@ const About = () => {
       <div className='achievementsContainer'>
         <div className='achievementsHeading'><p>ACHIEVEMENTS</p></div>
         <div className='achievementsContent'>
-          <img src={achievement1} alt={achievement1} />
-          <img src={achievement2} alt={achievement2} />
-          <img src={achievement3} alt={achievement3} />
-          <img src={achievement4} alt={achievement4} />
-          <img src={achievement5} alt={achievement5} />
-          <img src={achievement6} alt={achievement6} />
+          <img name={achievement1} id={achievement1} onClick={handleAchievementpopup} src={achievement1} alt={achievement1} />
+          <img name={achievement2} id={achievement2} onClick={handleAchievementpopup} src={achievement2} alt={achievement2} />
+          <img name={achievement3} id={achievement3} onClick={handleAchievementpopup} src={achievement3} alt={achievement3} />
+          <img name={achievement4} id={achievement4} onClick={handleAchievementpopup} src={achievement4} alt={achievement4} />
+          <img name={achievement5} id={achievement5} onClick={handleAchievementpopup} src={achievement5} alt={achievement5} />
+          <img name={achievement6} id={achievement6} onClick={handleAchievementpopup} src={achievement6} alt={achievement6} />
         </div>
       </div>
       <div className='articlesContainer'>
@@ -85,6 +109,12 @@ const About = () => {
           <a href='https://www.eastmojo.com/assam/2021/09/10/assamese-documentary-film-mon-pokhila-wins-global-recognition/' target="_blank" rel="noreferrer" ><img src={article3} alt={article3} /></a>
           <a href='https://assam.eastmojo.com/news/assam-news/assamese-documentary-film-mon-pokhila-wins-global-recognition/' target="_blank" rel="noreferrer" ><img src={article4} alt={article4} /></a>
         </div>
+      </div>
+      <div className='popupOutercontainer' style={popupdisplay}>
+          <div onClick={handleClosepopup} className='popupclosingContainer'>X</div>
+          <div className='popupInnercontainer'>
+            <img src={image} alt={image} />
+          </div>
       </div>
     </div>
     </>
