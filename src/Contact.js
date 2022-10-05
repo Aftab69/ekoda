@@ -1,6 +1,11 @@
 import React, { useRef } from 'react'
 import emailjs from "@emailjs/browser";
 import "./Contact.css"
+import icon1 from "./Images/youtubeicon.png"
+import icon2 from "./Images/whatsappicon.png"
+import icon3 from "./Images/facebookicon.png"
+import icon4 from "./Images/instagramicon.png"
+import icon5 from "./Images/linkedinicon.png"
 
 const Contact = () => {
   const form = useRef();
@@ -30,7 +35,22 @@ const Contact = () => {
               <button type="submit" value="Send">Submit</button>
           </form>
         </div>  
-        <div className='contactpageFooter'></div>
+        <div className='contactpageFooter'>
+          <div className='footerDiv1'>
+            <p>Our Location :</p>
+            <p>House no. 1(2nd floor), Asomi Path Railway colony road, Hatigarh Chariali Hatigarh, Guwahati, Assam</p>
+          </div>
+          <div className='footerDiv2'>
+            <p>Email us / Call us : ekodaproductions@gmail.com / +917002401695</p>
+            <div className='footericonImages'>
+              <a href='https://www.youtube.com/channel/UCnWLao6UvXoNSupz5jiDMiA' target='_blank' rel="noreferrer"><img src={icon1} alt={icon1} /></a>
+              <a href='https://wa.me/+917002401695/' target='_blank' rel="noreferrer"><img src={icon2} alt={icon2} /></a>
+              <a href='https://www.facebook.com/ekodaproductions' target='_blank' rel="noreferrer"><img src={icon3} alt={icon3} /></a>
+              <a href='https://www.instagram.com/ekodaproductions?igshid=YmMyMTA2M2Y=' target='_blank' rel="noreferrer"><img src={icon4} alt={icon4} /></a>
+              <a href='https://www.linkedin.com/in/ekoda-productions-249488218/' target='_blank' rel="noreferrer"><img src={icon5} alt={icon5} /></a>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   )

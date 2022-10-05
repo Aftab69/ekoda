@@ -102,6 +102,9 @@ span:hover{
     img{
         height: 75px;
     }
+    span{
+        font-size: 1rem;
+    }
 }
 @media only screen and (min-width: 2881px){
     *{
@@ -109,5 +112,8 @@ span:hover{
     }
     img{
         height: 100px;
+    }
+    span{
+        font-size: 1rem;
     }
 }
