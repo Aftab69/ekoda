@@ -19,8 +19,7 @@
 }
 .aboutpageHeading>span{
     background: black;
-    padding: 10px;
-    border-radius: 10px;
+    padding: 15px; 
     box-shadow: 5px 5px 8px #5a4f4f;
 }
 #background1{
@@ -61,6 +60,138 @@
     transition: all 1s ease-in-out;
     box-shadow: 7.5px 7.5px 8px #3d2c63;
 }
+.aboutpagesecondContainer{
+    background-image: url("./Images/aboutpagebackground.jpg");
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter Tight', sans-serif;
+}
+.cofoundersContainer{
+    border: 2px solid white;
+    margin: 5% 0;
+    width: 80%;
+    min-height:70vh;
+}
+.cofoundersHeading{
+    background-color: black;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    width: 100%;
+    min-height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cofoundersContent{
+    background: rgba(255, 255, 255, 0.233);
+    width: 100%;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.cofounder1box{
+    border: 2px solid black;
+    background: white;
+    width: 300px;
+    height: 450px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cofounder2box{
+    border: 2px solid black;
+    background: white;
+    width: 300px;
+    height: 450px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cofounderImages>img{
+    width: 250px;
+}
+.iconImages>a>img{
+    width: 30px;
+    margin: 10px;
+}
+.achievementsContainer{
+    border: 2px solid white;
+    margin: 5% 0;
+    width: 80%;
+    min-height:70vh;
+}
+.achievementsHeading{
+    background-color: black;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    width: 100%;
+    min-height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.achievementsContent{
+    background: rgba(255, 255, 255, 0.233);
+    width: 100%;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.achievementsContent>img{
+    width: 300px;
+    height: 320px;
+    margin: 20px 10px;
+    border: 2px solid black;
+}
+.articlesContainer{
+    border: 2px solid white;
+    margin: 5% 0;
+    width: 80%;
+    min-height:70vh;
+}
+.articlesHeading{
+    background-color: black;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    width: 100%;
+    min-height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.articlesContent{
+    background: rgba(255, 255, 255, 0.233);
+    width: 100%;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.articlesContent>a>img{
+    width: 375px;
+    margin: 20px 10px;
+    border: 2px solid black;
+}
 
 @media only screen and (min-width:769px) and (max-width:1080px) {
     .aboutpagetext1{
@@ -94,5 +225,98 @@
         width: 90vw;
         margin-left: 0;
         font-size: 1rem;
+    }
+    .cofounder1box{
+        width: 250px;
+        height: 375px;
+    }
+    .cofounder2box{
+        width: 250px;
+        height: 375px;
+    }
+    .cofounderImages>img{
+        margin-top: 20px;
+        width: 200px;
+    }
+    .iconImages>a>img{
+        width: 25px;
+        margin: 10px;
+    }
+    .achievementsContent>img{
+        width: 220px;
+        height: 280px;
+    }
+    .articlesContent>a>img{
+        width: 220px;
+        height: auto;
+    }
+}
+
+@media only screen and (min-width: 1921px) and (max-width: 2880px) {
+    .aboutpageHeading>span{
+        padding: 22px;
+    }
+    .cofounder1box{
+        width: 450px;
+        min-height: 675px;
+    }
+    .cofounder2box{
+        width: 450px;
+        min-height: 675px;
+    }
+    .cofounderImages>img{
+        margin-top: 10px;
+        width: 350px;
+        height: auto;
+    }
+    .cofoundersText>p{
+        font-size: 1.25rem;
+    }
+    .iconImages>a>img{
+        width: 45px;
+        height: 45px;
+        margin: 10px;
+    }
+    .achievementsContent>img{
+        width: 450px;
+        height: 480px;
+    }
+    .articlesContent>a>img{
+        width: 560px;
+        height: auto;
+    }
+}
+@media only screen and (min-width: 2881px){
+    .aboutpageHeading>span{
+        padding: 30px;
+    }
+    .cofounder1box{
+        width: 600px;
+        min-height: 900px;
+    }
+    .cofounder2box{
+        width: 600px;
+        min-height: 900px;
+    }
+    .cofounderImages>img{
+        margin-top: 20px;
+        width: 475px;
+        height: auto;
+    }
+    .cofoundersText>p{
+        font-size: 1.25rem;
+    }
+    .iconImages>a>img{
+        width: 60px;
+        height: 60px;
+        margin: 10px;
+    }
+    .achievementsContent>img{
+        width: 600px;
+        height: 650px;
+    }
+    .articlesContent>a>img{
+        width: 750px;
+        height: auto;
     }
 }

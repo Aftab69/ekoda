@@ -126,11 +126,19 @@
 }
 @media only screen and (min-width: 1921px) and (max-width: 2880px){
     *{
-        font-size: 1.25rem;
+        font-size: 1.5rem;
+    }
+    .videosOuterContainer>button{
+        padding: 15px;
+        font-size: 1rem;
     }
 }
 @media only screen and (min-width: 2881px){
     *{
-        font-size: 1.5rem;
+        font-size: 2rem;
+    }
+    .videosOuterContainer>button{
+        padding: 20px;
+        font-size: 1rem;
     }
 }
