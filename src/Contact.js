@@ -6,6 +6,7 @@ import icon2 from "./Images/whatsappicon.png"
 import icon3 from "./Images/facebookicon.png"
 import icon4 from "./Images/instagramicon.png"
 import icon5 from "./Images/linkedinicon.png"
+import icon6 from "./Images/locationicon.png"
 
 const Contact = () => {
   const form = useRef();
@@ -37,8 +38,11 @@ const Contact = () => {
         </div>  
         <div className='contactpageFooter'>
           <div className='footerDiv1'>
-            <p>Our Location :</p>
-            <p>House no. 1(2nd floor), Asomi Path Railway colony road, Hatigarh Chariali Hatigarh, Guwahati, Assam</p>
+            <div className='footerDiv1Line1'>
+              <img src={icon6} alt={icon6} />
+              <p>Our Location :</p>
+            </div>
+            <p>House no. 1 (2nd floor), Asomi Path Railway colony road, Hatigarh Chariali Hatigarh, Guwahati, Assam</p>
           </div>
           <div className='footerDiv2'>
             <p>Email us / Call us : ekodaproductions@gmail.com / +917002401695</p>
