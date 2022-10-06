@@ -76,7 +76,7 @@
 }
 .footerDiv1{
     width: 100%;
-    border-right: 1px solid white;
+    border: 1px solid white;
     min-height: 10vh;
     display: flex;
     flex-direction: column;
@@ -103,6 +103,7 @@
 .footerDiv2{
     width: 100%;
     min-height: 10vh;
+    border: 1px solid white;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -124,10 +125,6 @@
     .contactpageFooter{
         flex-direction: column;
     }
-    .footerDiv1{
-        border-right: none;
-        border-bottom: 1px solid white;
-    }
 }
 @media only screen and (max-width: 480px) {
     .formContainer{
@@ -136,10 +133,6 @@
     }
     .contactpageFooter{
         flex-direction: column;
-    }
-    .footerDiv1{
-        border-right: none;
-        border-bottom: 1px solid white;
     }
 }    
 @media only screen and (min-width: 1921px) and (max-width: 2880px){
