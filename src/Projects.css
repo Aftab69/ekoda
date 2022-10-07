@@ -67,12 +67,6 @@
 .eachVideo{
     margin: 10px;
     box-shadow: 7.5px 0 8px #888888;
-    transition: all 0.3s ease-in-out;
-}
-.eachVideo:hover{
-    opacity: 0.9;
-    transform: scale(1.05);
-    transition: all 0.3s ease-in-out;
 }
 
 @media only screen and (min-width:480px) and (max-width:768px){
@@ -80,20 +74,20 @@
         transform: scale(0.65);
         margin: -20px 0;
     }
-    .eachVideo:hover{
+    /* .eachVideo:hover{
         opacity: 1;
         transform: scale(0.65);
-    }
+    } */
 }
 @media only screen and (min-width:361px) and (max-width:480px){
     .eachVideo{
         transform: scale(0.5);
         margin: -115px 0;
     }
-    .eachVideo:hover{
+    /* .eachVideo:hover{
         opacity: 1;
         transform: scale(0.5);
-    }
+    } */
     .videoCategoryHeading>p{
         font-size: 1.25rem;
     }
@@ -103,10 +97,10 @@
         transform: scale(0.425);
         margin: -120px 0;
     }
-    .eachVideo:hover{
+    /* .eachVideo:hover{
         opacity: 1;
         transform: scale(0.425);
-    }
+    } */
     .videoCategoryHeading>p{
         font-size: 1.25rem;
     }
@@ -116,10 +110,10 @@
         transform: scale(0.375);
         margin: -120px 0;
     }
-    .eachVideo:hover{
+    /* .eachVideo:hover{
         opacity: 1;
         transform: scale(0.375);
-    }
+    } */
     .videoCategoryHeading>p{
         font-size: 1.25rem;
     }
