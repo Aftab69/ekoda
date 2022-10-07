@@ -1,6 +1,11 @@
 *{
     box-sizing: border-box;
 }
+#about{
+    position: sticky;
+    top: 0;
+    z-index: -2;
+}
 .aboutpageContainer{
     width: 100%;
     min-height: 100vh;
