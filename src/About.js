@@ -66,6 +66,8 @@ const About = () => {
         </div>
       </div>
     </div>
+    <div className='emptydiv'>
+    </div>
     <div className='aboutpagesecondContainer'>
       <div className='cofoundersContainer'>
         <div className='cofoundersHeading'><p>CO-FOUNDERS</p></div>
