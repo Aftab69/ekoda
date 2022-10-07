@@ -26,7 +26,7 @@ const Home = () => {
   },[])
   return (
     <>
-       <div className='homepageContainer'>
+       <div id='homepage' className='homepageContainer'>
         <video src={showreel} autoPlay loop muted />
        </div>
     { loading === true ?
