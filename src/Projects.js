@@ -18,6 +18,8 @@ const Projects = () => {
   }
   return (
     <>
+    <div className='emptydivprojectspage'>
+    </div>
       <div id='projects' className='projectspageContainer'>
         <div className='projectspageHeading'><span>OUR PROJECTS</span></div>
         <div className='videosContainer'>
