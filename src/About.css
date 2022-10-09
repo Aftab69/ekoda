@@ -1,11 +1,6 @@
 *{
     box-sizing: border-box;
 }
-#about{
-    position: sticky;
-    top: 0;
-    z-index: -2;
-}
 .aboutpageContainer{
     width: 100%;
     min-height: 100vh;
@@ -69,10 +64,6 @@
 }
 .aboutpagetext2>p{
     font-size: 1.25rem;
-}
-.emptydiv{
-    width: 100%;
-    height: 200px;
 }
 .aboutpagesecondContainer{
     border-top: 2px solid white;
@@ -251,6 +242,18 @@
     cursor: pointer;
 }
 
+@media only screen and (min-width:769px) {
+    #about{
+        position: sticky;
+        position: -webkit-sticky;
+        top: 0;
+        z-index: -2;
+    }
+    .emptydiv{
+        width: 100%;
+        height: 200px;
+    }
+}
 @media only screen and (min-width:769px) and (max-width:1080px) {
     .aboutpagetext1{
         width: 50vw;

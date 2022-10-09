@@ -1,8 +1,3 @@
-#homepage{
-    position: sticky;
-    top: 0;
-    z-index: -3;
-}
 body{
     background-color: black;
 }
@@ -35,6 +30,14 @@ body{
 }
 .loadingpageContainer>img{
     width: 60px;
+}
+@media only screen and (min-width:769px) {
+    #homepage{
+        position: sticky;
+        position: -webkit-sticky;
+        top: 0;
+        z-index: -3;
+    }
 }
 @media only screen and (max-width:1080px){
     .homepageContainer>video{

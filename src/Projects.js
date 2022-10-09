@@ -11,6 +11,7 @@ const Projects = () => {
       autoplay: 0,
     },
   };
+  
   const handleView = (e) =>{
     document.getElementById(e.target.name).style.display = "none";
     document.getElementById("videosof"+e.target.name).style.height = "auto";
