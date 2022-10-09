@@ -1,7 +1,16 @@
 *{
     box-sizing: border-box;
 }
-.aboutpageContainer{
+#about{
+    display: flex;
+    flex-direction: column;
+}
+.aboutpageContainer1{
+    width: 100%;
+    height: 100vh;
+    font-family: 'Inter Tight', sans-serif;
+}
+.aboutpageContainer2{
     width: 100%;
     min-height: 100vh;
     font-family: 'Inter Tight', sans-serif;
@@ -25,12 +34,10 @@
 #background1{
     background-image: url("./Images/aboutpagebackground1.jpg");
     background-size: cover;
-    transition: all 1s ease-in-out;
 }
 #background2{
     background-image: url("./Images/aboutpagebackground2.jpg");
     background-size: cover;
-    transition: all 1s ease-in-out;
 }
 .aboutpageText{
     width: 100%;
@@ -246,19 +253,6 @@
 }
 .popupclosingContainer:hover{
     cursor: pointer;
-}
-
-@media only screen and (min-width:769px) {
-    #about{
-        position: sticky;
-        position: -webkit-sticky;
-        top: 0;
-        z-index: -2;
-    }
-    .emptydiv{
-        width: 100%;
-        height: 200px;
-    }
 }
 @media only screen and (min-width:769px) and (max-width:1080px) {
     .aboutpagetext1{

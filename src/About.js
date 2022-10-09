@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, {  useState } from 'react'
 import "./About.css"
 import Fade from 'react-reveal/Fade';
 import Zoom from 'react-reveal/Zoom';
@@ -18,18 +18,8 @@ import article3 from "./Images/article3.png"
 import article4 from "./Images/article4.png"
 
 const About = () => {
-  const [ background, setBackground ] = useState("background1")
   const [ image, setImage ] = useState()
   const [ popupdisplay, setPopupdisplay ] = useState({display:"none"})
-
-  useEffect(() => {
-    setInterval(() => {
-      setBackground("background2");
-    }, 8000);
-    setInterval(() => {
-      setBackground("background1");
-    }, 16000);
-  }, []);
 
   const handleAchievementpopup = (e) =>{
     e.preventDefault();
@@ -55,20 +45,13 @@ const About = () => {
   return (
     <>
     <div id='about'>
-      <div className='aboutpageContainer' id={background}>
+      <div className='aboutpageContainer1' id='background1'>
         <div className='aboutpageHeading'><span>ABOUT US</span></div>
         <div className='aboutpageText'>
-          {background==="background1"?
-          <div className='aboutpagetext1'><p>EKODA is a Guwahati-based production house. We are the creators who love to tell stories through visual medium. Our services include video production like music videos, short films, documentaries, event videos, TV commercials, wedding films, photoshoots, logo designs, poster designs and artworks.
-          </p></div> 
-          :
-          <div className='aboutpagetext2'><p>We provide production details starting from planning to coordination and finally the execution and post production. Let us help you craft your stories through our reels. Let's create together.
-          </p></div>  
-          }
+          <Zoom><div className='aboutpagetext1'><p>EKODA is a Guwahati-based production house. We are the creators who love to tell stories through visual medium. Our services include video production like music videos, short films, documentaries, event videos, TV commercials, wedding films, photoshoots, logo designs, poster designs and artworks.We provide production details starting from planning to coordination and finally the execution and post production. Let us help you craft your stories through our reels. Let's create together.
+          </p></div></Zoom>
         </div>
       </div>
-    </div>
-    <div className='emptydiv'>
     </div>
     <div className='aboutpagesecondContainer'>
       <div className='cofoundersContainer'>
