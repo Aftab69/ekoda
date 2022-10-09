@@ -53,6 +53,8 @@ const About = () => {
         </div>
       </div>
     </div>
+    <div className='aboutpageEmptydiv'>
+    </div>
     <div className='aboutpagesecondContainer'>
       <div className='cofoundersContainer'>
         <div className='cofoundersHeading'><p>CO-FOUNDERS</p></div>
