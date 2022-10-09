@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Projects.css"
-import Youtube from "react-youtube"
+import Youtube from "react-youtube";
 
 const Projects = () => {
   const opts = {

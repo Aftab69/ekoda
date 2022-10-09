@@ -15,7 +15,7 @@ function App() {
       <Home />
       <Services />
       {(matches)?
-      <Projects /> :
+      <Projects/> :
       <Projectsmobile />
       }
       <About />

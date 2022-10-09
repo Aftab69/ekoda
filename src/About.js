@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import "./About.css"
+import Fade from 'react-reveal/Fade';
+import Zoom from 'react-reveal/Zoom';
 import cofounder1 from "./Images/cofounder1.jpg"
 import cofounder2 from "./Images/cofounder2.jpg"
 import icon1 from "./Images/facebookicon2.png"
@@ -72,6 +74,7 @@ const About = () => {
       <div className='cofoundersContainer'>
         <div className='cofoundersHeading'><p>CO-FOUNDERS</p></div>
         <div className='cofoundersContent'>
+          <Fade bottom>
           <div className='cofounder1box'>
             <div className='cofounderImages'><img src={cofounder1} alt={cofounder1} /></div>
             <div className='cofoundersText'><p>Maaruf Bin Rafique</p></div>
@@ -81,6 +84,8 @@ const About = () => {
               <a href='https://www.instagram.com/maaruf21/' target="_black"><img src={icon2} alt={icon2} /></a>
             </div>
           </div>
+          </Fade>
+          <Fade bottom>
           <div className='cofounder2box'>
             <div className='cofounderImages'><img src={cofounder2} alt={cofounder2} /></div>
             <div className='cofoundersText'><p>Priyanka Sohoria</p></div>
@@ -90,26 +95,27 @@ const About = () => {
               <a href='https://www.instagram.com/priyankasohoria/' target="_black"><img src={icon2} alt={icon2} /></a>
             </div>
           </div>
+          </Fade>
         </div>
       </div>
       <div className='achievementsContainer'>
         <div className='achievementsHeading'><p>ACHIEVEMENTS</p></div>
         <div className='achievementsContent'>
-          <img name={achievement1} id={achievement1} onClick={handleAchievementpopup} src={achievement1} alt={achievement1} />
-          <img name={achievement2} id={achievement2} onClick={handleAchievementpopup} src={achievement2} alt={achievement2} />
-          <img name={achievement3} id={achievement3} onClick={handleAchievementpopup} src={achievement3} alt={achievement3} />
-          <img name={achievement4} id={achievement4} onClick={handleAchievementpopup} src={achievement4} alt={achievement4} />
-          <img name={achievement5} id={achievement5} onClick={handleAchievementpopup} src={achievement5} alt={achievement5} />
-          <img name={achievement6} id={achievement6} onClick={handleAchievementpopup} src={achievement6} alt={achievement6} />
+          <Zoom><img name={achievement1} id={achievement1} onClick={handleAchievementpopup} src={achievement1} alt={achievement1} /></Zoom>
+          <Zoom><img name={achievement2} id={achievement2} onClick={handleAchievementpopup} src={achievement2} alt={achievement2} /></Zoom>
+          <Zoom><img name={achievement3} id={achievement3} onClick={handleAchievementpopup} src={achievement3} alt={achievement3} /></Zoom>
+          <Zoom><img name={achievement4} id={achievement4} onClick={handleAchievementpopup} src={achievement4} alt={achievement4} /></Zoom>
+          <Zoom><img name={achievement5} id={achievement5} onClick={handleAchievementpopup} src={achievement5} alt={achievement5} /></Zoom>
+          <Zoom><img name={achievement6} id={achievement6} onClick={handleAchievementpopup} src={achievement6} alt={achievement6} /></Zoom>
         </div>
       </div>
       <div className='articlesContainer'>
         <div className='articlesHeading'><p>ARTICLES</p></div>
         <div className='articlesContent'>
-          <a href='https://www.instagram.com/p/CTwHOIBhpLs/?utm_medium=copy_link' target="_blank" rel="noreferrer" ><img src={article1} alt={article1} /></a>
-          <a href='https://rupaliparda.com/archives/27692' target="_blank" rel="noreferrer" ><img src={article2} alt={article2} /></a>
-          <a href='https://www.eastmojo.com/assam/2021/09/10/assamese-documentary-film-mon-pokhila-wins-global-recognition/' target="_blank" rel="noreferrer" ><img src={article3} alt={article3} /></a>
-          <a href='https://assam.eastmojo.com/news/assam-news/assamese-documentary-film-mon-pokhila-wins-global-recognition/' target="_blank" rel="noreferrer" ><img src={article4} alt={article4} /></a>
+          <a href='https://www.instagram.com/p/CTwHOIBhpLs/?utm_medium=copy_link' target="_blank" rel="noreferrer" ><Zoom><img src={article1} alt={article1} /></Zoom></a>
+          <a href='https://rupaliparda.com/archives/27692' target="_blank" rel="noreferrer" ><Zoom><img src={article2} alt={article2} /></Zoom></a>
+          <a href='https://www.eastmojo.com/assam/2021/09/10/assamese-documentary-film-mon-pokhila-wins-global-recognition/' target="_blank" rel="noreferrer" ><Zoom><img src={article3} alt={article3} /></Zoom></a>
+          <a href='https://assam.eastmojo.com/news/assam-news/assamese-documentary-film-mon-pokhila-wins-global-recognition/' target="_blank" rel="noreferrer" ><Zoom><img src={article4} alt={article4} /></Zoom></a>
         </div>
       </div>
       <div className='popupOutercontainer' style={popupdisplay}>
