@@ -31,7 +31,7 @@
     font-size: 1.5rem;
 }
 .videosContainer{
-    width: 95%;
+    width: 100%;
     min-height: 90vh;
 }
 .videoCategoryHeading{
@@ -56,14 +56,14 @@
     justify-content: center;
     align-items: center;
 }
-.videosOuterContainer>button{
+button{
     margin: 10px;
     padding: 10px;
     background-color: rgb(0, 0, 0);
     color: white;
     border: none;
 }
-.videosOuterContainer>button:hover{
+button:hover{
     cursor: pointer;
     background-color: rgb(39, 39, 39);
 }
