@@ -4,6 +4,7 @@ import useMediaQuery from "./useMediaQuery";
 import showreel from "./Images/Showreel.mp4"
 import showreelmobile from "./Images/showreelmobile.mp4"
 import loadinggif from "./Images/loading.gif"
+import logo from "./Images/logo.png"
 
 const Home = () => {
 
@@ -42,7 +43,7 @@ const Home = () => {
        
     { loading === true ?
       <div className='loadingpageContainer'>
-          <p>LOADING ...</p>
+          <img src={logo} alt={logo} />
           <img src={loadinggif} alt={loadinggif} />
       </div> :
       <></>
