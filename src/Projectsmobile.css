@@ -39,3 +39,9 @@
 .eachVideoMobile{
     margin: 20px 0;
 }
+
+@media only screen and (max-width:320px) {
+    .eachVideoMobile{
+        transform: scale(0.9);
+    }
+}
