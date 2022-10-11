@@ -78,10 +78,9 @@
 #innerContainer6>p:first-child{
     font-weight: 600;
 }
-@media only screen and (min-width:769px){
+@media only screen and (min-width:1201px){
     #services{
         position: sticky;
-        position: -webkit-sticky;
         top: 0;
         z-index: -3;
     }

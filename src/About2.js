@@ -14,7 +14,6 @@ import article1 from "./Images/article1.png"
 import article2 from "./Images/article2.png"
 import article3 from "./Images/article3.png"
 import article4 from "./Images/article4.png"
-import Fade from 'react-reveal/Fade';
 import Zoom from 'react-reveal/Zoom';
 
 const About2 = () => {
@@ -49,7 +48,7 @@ const About2 = () => {
       <div className='cofoundersContainer'>
         <div className='cofoundersHeading'><p>CO-FOUNDERS</p></div>
         <div className='cofoundersContent'>
-          <Fade bottom>
+          <Zoom>
           <div className='cofounder1box'>
             <div className='cofounderImages'><img src={cofounder1} alt={cofounder1} /></div>
             <div className='cofoundersText'><p>Maaruf Bin Rafique</p></div>
@@ -59,8 +58,8 @@ const About2 = () => {
               <a href='https://www.instagram.com/maaruf21/' target="_black"><img src={icon2} alt={icon2} /></a>
             </div>
           </div>
-          </Fade>
-          <Fade bottom>
+          </Zoom>
+          <Zoom>
           <div className='cofounder2box'>
             <div className='cofounderImages'><img src={cofounder2} alt={cofounder2} /></div>
             <div className='cofoundersText'><p>Priyanka Sohoria</p></div>
@@ -70,7 +69,7 @@ const About2 = () => {
               <a href='https://www.instagram.com/priyankasohoria/' target="_black"><img src={icon2} alt={icon2} /></a>
             </div>
           </div>
-          </Fade>
+          </Zoom>
         </div>
       </div>
       <div className='achievementsContainer'>

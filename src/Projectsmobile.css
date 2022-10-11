@@ -5,6 +5,7 @@
 }
 .projectsmobilepageHeading{
     border-top: 2px solid white;
+    background-color: black;
     width: 100%;
     min-height: 10vh;
     display: flex;

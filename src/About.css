@@ -50,10 +50,9 @@
     font-size: 1.25rem;
 }
 
-@media screen and (min-width:769px) {
+@media screen and (min-width:1201px) {
     #about{
         position: sticky;
-        position: -webkit-sticky;
         top: 0;
         z-index: -2;
     }
@@ -63,18 +62,9 @@
         width: 50vw;
         margin-left: 0;
     }
-    .aboutpagetext2{
-        width: 50vw;
-        margin-left: 0;
-    }
 }
 @media only screen and (min-width:481px) and (max-width:768px) {
     .aboutpagetext1{
-        width: 75vw;
-        margin-left: 0;
-        font-size: 1.25rem;
-    }
-    .aboutpagetext2{
         width: 75vw;
         margin-left: 0;
         font-size: 1.25rem;
@@ -86,11 +76,6 @@
 }
 @media only screen and (max-width:480px) {
     .aboutpagetext1{
-        width: 90vw;
-        margin-left: 0;
-        font-size: 1rem;
-    }
-    .aboutpagetext2{
         width: 90vw;
         margin-left: 0;
         font-size: 1rem;

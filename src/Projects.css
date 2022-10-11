@@ -1,10 +1,6 @@
 *{
     box-sizing: border-box;
 }
-.emptydivprojectspage{
-        width: 100%;
-        height: 200px;
-}
 .projectspageContainer{
     width: 100%;
     min-height: 100vh;
@@ -71,14 +67,17 @@ button:hover{
     margin: 10px;
     box-shadow: 7.5px 0 8px #888888;
 }
+@media only screen and (min-width:1201px) {
+    .emptydivprojectspage{
+        width: 100%;
+        height: 200px;
+}
+}
 @media only screen and (min-width:480px) and (max-width:768px){
     .eachVideo{
         transform: scale(0.65);
         margin: -20px 0;
     }
-    .emptydivprojectspage{
-        height: 0;
-    }  
 }
 @media only screen and (min-width:361px) and (max-width:480px){
     .eachVideo{
@@ -87,10 +86,7 @@ button:hover{
     }
     .videoCategoryHeading>p{
         font-size: 1.25rem;
-    }
-    .emptydivprojectspage{
-        height: 0;
-    }  
+    } 
 }
 @media only screen and (min-width:301px) and (max-width:360px){
     .eachVideo{
@@ -99,10 +95,7 @@ button:hover{
     }
     .videoCategoryHeading>p{
         font-size: 1.25rem;
-    }
-    .emptydivprojectspage{
-        height: 0;
-    }  
+    } 
 }
 @media only screen and (max-width:300px){
     .eachVideo{
@@ -112,9 +105,6 @@ button:hover{
     .videoCategoryHeading>p{
         font-size: 1.25rem;
     }
-    .emptydivprojectspage{
-        height: 0;
-    }  
 }
 @media only screen and (min-width: 1921px) and (max-width: 2880px){
     *{

@@ -31,10 +31,9 @@ body{
 .loadingpageContainer>img{
     width: 60px;
 }
-@media only screen and (min-width:769px) {
+@media only screen and (min-width:1201px) {
     #homepage{
         position: sticky;
-        position: -webkit-sticky;
         top: 0;
         z-index: -3;
     }
