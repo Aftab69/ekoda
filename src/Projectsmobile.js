@@ -7,7 +7,7 @@ import Zoom from 'react-reveal/Zoom';
 const Projectsmobile = () => {
   const matches = useMediaQuery("(min-width: 480px)");
   return (
-    <div className='projectsmobilepageContainer'>
+    <div className='projectsmobilepageContainer' id='projects'>
       <div className='projectsmobilepageHeading'>
         <p>OUR PROJECTS</p>
       </div>
