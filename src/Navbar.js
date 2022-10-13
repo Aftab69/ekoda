@@ -54,7 +54,7 @@ const Navbar = () => {
           </div>
         </nav>
         {(active===true) ?
-        <div className='hamburgermenuContainer'>
+        <div className='hamburgermenuContainer' id='hamburger'>
           <HashLink smooth to="#services" onClick={()=>{setActive(false);revertHamburger()}} style={{textDecoration:"none",color:"white"}}><p>SERVICES</p></HashLink>
           <HashLink smooth to="#projects" onClick={()=>{setActive(false);revertHamburger()}} style={{textDecoration:"none",color:"white"}}><p>PROJECTS</p></HashLink>
           <HashLink smooth to="#about" onClick={()=>{setActive(false);revertHamburger()}} style={{textDecoration:"none",color:"white"}}><p>ABOUT</p></HashLink>

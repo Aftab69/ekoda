@@ -85,6 +85,9 @@ span:hover{
 }
 @media only screen and (max-width:768px){
     nav{
+        z-index: 3;
+        position: sticky;
+        top: 0;
         display: flex;
         justify-content: space-between;
     }
@@ -101,6 +104,11 @@ span:hover{
     #logoImage{
         width: 100px;
         height: auto;
+    }
+    #hamburger{
+        position: sticky;
+        top: 10vh;
+        z-index: 3;
     }
 }
 @media only screen and (min-width: 1921px) and (max-width: 2880px){
