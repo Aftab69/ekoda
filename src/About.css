@@ -48,6 +48,7 @@
 }
 .aboutpagetext1>p{
     font-size: 1.25rem;
+    font-family: 'Jost', sans-serif;
 }
 
 @media screen and (min-width:1201px) {

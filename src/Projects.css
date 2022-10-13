@@ -6,7 +6,7 @@
     min-height: 100vh;
     padding-bottom: 10px;
     background: white;
-    font-family: 'Inter Tight', sans-serif;
+    font-family: 'Jost', sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -16,6 +16,7 @@
 .projectspageHeading{
     border-top: 2px solid white;
     background-color: black;
+    font-family: 'Inter Tight', sans-serif;
     width: 100%;
     min-height: 10vh;
     display: flex;

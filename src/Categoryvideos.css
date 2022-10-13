@@ -17,6 +17,9 @@ body{
     font-size: 1.5rem;
     font-family: 'Inter Tight', sans-serif;
 }
+.categoryvideosHeading>p{
+    font-family: 'Josefin Sans', sans-serif;
+}
 .filterContainer{
     width: 100%;
     min-height: 10vh;

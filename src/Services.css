@@ -47,6 +47,10 @@
 }
 #innerContainer2>p:first-child{
     font-weight: 600;
+    font-family: 'Josefin Sans', sans-serif;
+}
+#innerContainer2>p{
+    font-family: 'Jost', sans-serif;
 }
 #innerContainer3{
     background-image: url("./Images/servicesbackground3.jpg");
@@ -62,6 +66,10 @@
 }
 #innerContainer4>p:first-child{
     font-weight: 600;
+    font-family: 'Josefin Sans', sans-serif;
+}
+#innerContainer4>p{
+    font-family: 'Jost', sans-serif;
 }
 #innerContainer5{
     background-image: url("./Images/servicesbackground2.jpg");
@@ -77,6 +85,10 @@
 }
 #innerContainer6>p:first-child{
     font-weight: 600;
+    font-family: 'Josefin Sans', sans-serif;
+}
+#innerContainer6>p{
+    font-family: 'Jost', sans-serif;
 }
 @media only screen and (min-width:1201px){
     #services{

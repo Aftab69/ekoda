@@ -9,7 +9,8 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Inter Tight', sans-serif;
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 1.2rem;
 }
 #logoImage{
     width: 120px;
@@ -78,7 +79,8 @@ span:hover{
     align-items: center;
     background-color: rgba(0, 0, 0, 0.678);
     color: white;
-    font-family: 'Inter Tight', sans-serif;
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 1.1rem;
     width: 100%;
     position: absolute;
     z-index: 2;
@@ -120,7 +122,7 @@ span:hover{
         height: 75px;
     }
     span{
-        font-size: 1rem;
+        font-size: 1.25rem;
     }
     #logoImage{
         margin: 0 20px;
@@ -136,7 +138,7 @@ span:hover{
         height: 100px;
     }
     span{
-        font-size: 1rem;
+        font-size: 1.3rem;
     }
     #logoImage{
         margin: 0 40px;
