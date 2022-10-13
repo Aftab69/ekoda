@@ -90,9 +90,15 @@
     .aboutpageHeading>span{
         padding: 22px;
     }
+    .aboutpagetext1{
+        padding: 30px;
+    }
 }
 @media only screen and (min-width: 2881px){
     .aboutpageHeading>span{
         padding: 30px;
+    }
+    .aboutpagetext1{
+        padding: 40px;
     }
 }
