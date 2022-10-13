@@ -52,7 +52,7 @@ const Contact = () => {
               <p>Google Map Link &nbsp;:&nbsp;</p>
               <a href='https://goo.gl/maps/xVy3CojHCUCg5jNW6' target="_blank" rel="noreferrer"><Zoom><img src={icon7} alt={icon7} /></Zoom></a>
             </div>
-            <p>Address &nbsp;:&nbsp; House no. 1 (2nd floor), Asomi Path Railway colony road, Hatigarh Chariali Hatigarh, Guwahati, Assam , 781021</p>
+            <p>Our Address &nbsp;:&nbsp; House no. 1 (2nd floor), Asomi Path Railway colony road, Hatigarh Chariali Hatigarh, Guwahati, Assam , 781021</p>
           </div>
           <div className='footerDiv2'>
           <div className='footerDiv2Line'>
