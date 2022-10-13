@@ -106,6 +106,7 @@ span:hover{
         height: auto;
     }
     #hamburger{
+        background-color: black;
         position: sticky;
         top: 10vh;
         z-index: 3;
