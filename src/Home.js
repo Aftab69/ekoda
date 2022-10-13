@@ -5,6 +5,7 @@ import showreel from "./Images/Showreel.mp4"
 import showreelmobile from "./Images/showreelmobile.mp4"
 import loadinggif from "./Images/loading.gif"
 import logo from "./Images/logo.png"
+import icon1 from "./Images/scrolltopicon.png"
 
 const Home = () => {
 
@@ -30,6 +31,11 @@ const Home = () => {
     setTimeout( loadingfunc , 1000)
     // eslint-disable-next-line
   },[])
+
+  const handleTop = () =>{
+    window.scrollTo({top: 0, behavior: 'smooth'});
+  }
+
   return (
     <>
     {(matches) ?
@@ -39,6 +45,9 @@ const Home = () => {
      </div>
      <div className='showreelButtonContainer'>
         <a href='https://www.youtube.com/watch?v=siXxsNosnGs' target="_blank" rel="noreferrer"><button id='showreelButton'>WATCH SHOWREEL</button></a>
+     </div>
+     <div className='scrolltotopContainer'>
+      <img onClick={handleTop} src={icon1} alt={icon1} />
      </div>
      </>
      :
