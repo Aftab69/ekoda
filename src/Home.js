@@ -43,7 +43,7 @@ const Home = () => {
        
     { loading === true ?
       <div className='loadingpageContainer'>
-          <img src={logo} alt={logo} />
+          <img id='logoImageLoading' src={logo} alt={logo} />
           <img src={loadinggif} alt={loadinggif} />
       </div> :
       <></>

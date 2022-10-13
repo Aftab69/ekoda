@@ -11,6 +11,10 @@ nav{
     align-items: center;
     font-family: 'Inter Tight', sans-serif;
 }
+#logoImage{
+    width: 100px;
+    height: auto;
+}
 .logoContainer{
     width: 20%;
     min-height: 10vh;
@@ -105,6 +109,11 @@ span:hover{
     span{
         font-size: 1rem;
     }
+    #logoImage{
+        margin: 0 20px;
+        width: 150px;
+        height: auto;
+    }
 }
 @media only screen and (min-width: 2881px){
     *{
@@ -115,5 +124,10 @@ span:hover{
     }
     span{
         font-size: 1rem;
+    }
+    #logoImage{
+        margin: 0 40px;
+        width: 200px;
+        height: auto;
     }
 }

@@ -28,7 +28,7 @@ const Navbar = () => {
     <>
         <nav id='home'>
           <div className='logoContainer'>
-            <HashLink smooth to="#home" style={{textDecoration:"none"}}><img src={logo} alt={logo} /></HashLink>
+            <HashLink smooth to="#home" style={{textDecoration:"none"}}><img id='logoImage' src={logo} alt={logo} /></HashLink>
           </div>
           <div className='linksContainer'>
             <HashLink smooth to="#services" style={{textDecoration:"none"}}><span>SERVICES</span></HashLink>
