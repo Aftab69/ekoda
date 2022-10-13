@@ -34,6 +34,29 @@ body{
 .showreelButtonContainer>a>button:hover{
     background-color: rgba(44, 44, 44, 0.671);
 }
+.showreelButtonContainerMobile{
+    box-sizing: border-box;
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    width: 99vw;
+    height: 90vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.showreelButtonContainerMobile>a>button{
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.671);
+    margin: 10px;
+    padding: 10px;
+    font-family: 'Inter Tight', sans-serif;
+}
+.showreelButtonContainerMobile>a>button:hover{
+    background-color: rgba(44, 44, 44, 0.671);
+}
 #logoImageLoading{
     width: 150px;
     height: auto;

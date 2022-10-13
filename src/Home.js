@@ -42,9 +42,14 @@ const Home = () => {
      </div>
      </>
      :
+     <>
       <div id='homepage' className='homepageContainer'>
       <video src={showreelmobile} autoPlay loop muted />
       </div>
+      <div className='showreelButtonContainerMobile'>
+      <a href='https://www.youtube.com/watch?v=siXxsNosnGs' target="_blank" rel="noreferrer"><button id='showreelButton'>WATCH SHOWREEL</button></a>
+      </div>
+    </>
     }
        
     { loading === true ?
