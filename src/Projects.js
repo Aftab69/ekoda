@@ -27,7 +27,7 @@ const Projects = () => {
                   <Zoom><Youtube className='eachVideo' videoId='-bpQpsO7mWs' opts={opts} /></Zoom>
                   <Zoom><Youtube className='eachVideo' videoId='POuwAy2JTLk' opts={opts} /></Zoom>
                 </div>
-                <Link style={{textDecoration:"none"}} to="/musicvideos"><button name="button1" id="button1" style={{display:"block"}}>View more</button></Link>
+                <Link style={{textDecoration:"none"}} to="/musicvideos" target="_blank" rel="noopener noreferrer"><button name="button1" id="button1" style={{display:"block"}}>View more</button></Link>
             </div>
             <div className='videoCategoryHeading'><p>Ad Films :</p></div>
             <div className='videosOuterContainer'>

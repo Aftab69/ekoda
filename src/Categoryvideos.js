@@ -20,7 +20,7 @@ const Musicvideos = (props) => {
     <>
     <div className='categoryvideosBackground'>
       <div className='categoryvideosHeading'>
-        <Link to="/"><img className='logoImage' src={logo} alt={logo}/></Link>
+        <Link to="/"><img id='logoImage' className='logoImage' src={logo} alt={logo}/></Link>
         <p>{heading}</p>
       </div>
       <div className='filterContainer'>
