@@ -4,11 +4,35 @@ body{
 .homepageContainer{
     width: 100%;
     height: 90vh;
+    font-family: 'Inter Tight', sans-serif;
 }
 .homepageContainer>video{
     width: 100%;
     height: 90vh;
     object-fit: cover;
+}
+.showreelButtonContainer{
+    box-sizing: border-box;
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    width: 99vw;
+    height: 90vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.showreelButtonContainer>a>button{
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.671);
+    margin: 20px;
+    padding: 20px;
+    font-family: 'Inter Tight', sans-serif;
+}
+.showreelButtonContainer>a>button:hover{
+    background-color: rgba(44, 44, 44, 0.671);
 }
 #logoImageLoading{
     width: 150px;
@@ -61,6 +85,10 @@ body{
         width: 220px;
         height: auto;
     }
+    .showreelButtonContainer>a>button{
+        margin: 30px;
+        padding: 30px;
+    }
 }
 @media only screen and (min-width: 2881px){
     .loadingpageContainer>img:nth-child(2){
@@ -69,5 +97,9 @@ body{
     #logoImageLoading{
         width: 300px;
         height: auto;
+    }
+    .showreelButtonContainer>a>button{
+        margin: 40px;
+        padding: 40px;
     }
 }
