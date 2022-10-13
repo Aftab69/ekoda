@@ -7,7 +7,7 @@ import icon2 from "./Images/whatsappicon.png"
 import icon3 from "./Images/facebookicon.png"
 import icon4 from "./Images/instagramicon.png"
 import icon5 from "./Images/linkedinicon.png"
-import icon6 from "./Images/locationicon.png"
+import icon7 from "./Images/clickhereicon.png"
 
 const Contact = () => {
   const form = useRef();
@@ -42,13 +42,17 @@ const Contact = () => {
         <div className='contactpageFooter'>
           <div className='footerDiv1'>
             <div className='footerDiv1Line1'>
-              <Zoom><img src={icon6} alt={icon6} /></Zoom>
-              <p>Our Location :</p>
+              <p>Our Location &nbsp;:&nbsp;</p>
             </div>
-            <p>House no. 1 (2nd floor), Asomi Path Railway colony road, Hatigarh Chariali Hatigarh, Guwahati, Assam</p>
+            <div className='footerDiv1Line2'>
+              <p>Google Map Link &nbsp;:&nbsp;</p>
+              <a href='https://goo.gl/maps/xVy3CojHCUCg5jNW6' target="_blank" rel="noreferrer"><img src={icon7} alt={icon7} /></a>
+            </div>
+            <p>Address &nbsp;:&nbsp; House no. 1 (2nd floor), Asomi Path Railway colony road, Hatigarh Chariali Hatigarh, Guwahati, Assam</p>
           </div>
           <div className='footerDiv2'>
-            <p>Email us / Call us : ekodaproductions@gmail.com / +919577479901</p>
+            <p>Email us &nbsp;:&nbsp; ekodaproductions@gmail.com</p>
+            <p>Call us &nbsp;:&nbsp; +919577479901</p>
             <div className='footericonImages'>
               <a href='https://www.youtube.com/channel/UCnWLao6UvXoNSupz5jiDMiA' target='_blank' rel="noreferrer"><Zoom><img src={icon1} alt={icon1} /></Zoom></a>
               <a href='https://wa.me/+919577479901/' target='_blank' rel="noreferrer"><Zoom><img src={icon2} alt={icon2} /></Zoom></a>
