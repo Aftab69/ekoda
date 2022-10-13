@@ -39,7 +39,7 @@ const Navbar = () => {
           <div className='sociallinksContainer'>
             <a href="https://www.facebook.com/ekodaproductions" target="_blank" rel="noreferrer"><img src={facebook} alt={facebook} /></a>
             <a href="https://www.instagram.com/ekodaproductions?igshid=YmMyMTA2M2Y=" target="_blank" rel="noreferrer"><img src={instagram} alt={instagram} /></a>
-            <a href='https://wa.me/+917002401695/' target="_blank" rel="noreferrer"><img src={whatsapp} alt={whatsapp} /></a>
+            <a href='https://wa.me/+919577479901/' target="_blank" rel="noreferrer"><img src={whatsapp} alt={whatsapp} /></a>
           </div>
           <div className='hamburger' onClick={()=>{
             if(active===false){

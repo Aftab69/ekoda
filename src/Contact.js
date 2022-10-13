@@ -48,10 +48,10 @@ const Contact = () => {
             <p>House no. 1 (2nd floor), Asomi Path Railway colony road, Hatigarh Chariali Hatigarh, Guwahati, Assam</p>
           </div>
           <div className='footerDiv2'>
-            <p>Email us / Call us : ekodaproductions@gmail.com / +917002401695</p>
+            <p>Email us / Call us : ekodaproductions@gmail.com / +919577479901</p>
             <div className='footericonImages'>
               <a href='https://www.youtube.com/channel/UCnWLao6UvXoNSupz5jiDMiA' target='_blank' rel="noreferrer"><Zoom><img src={icon1} alt={icon1} /></Zoom></a>
-              <a href='https://wa.me/+917002401695/' target='_blank' rel="noreferrer"><Zoom><img src={icon2} alt={icon2} /></Zoom></a>
+              <a href='https://wa.me/+919577479901/' target='_blank' rel="noreferrer"><Zoom><img src={icon2} alt={icon2} /></Zoom></a>
               <a href='https://www.facebook.com/ekodaproductions' target='_blank' rel="noreferrer"><Zoom><img src={icon3} alt={icon3} /></Zoom></a>
               <a href='https://www.instagram.com/ekodaproductions?igshid=YmMyMTA2M2Y=' target='_blank' rel="noreferrer"><Zoom><img src={icon4} alt={icon4} /></Zoom></a>
               <a href='https://www.linkedin.com/in/ekoda-productions-249488218/' target='_blank' rel="noreferrer"><Zoom><img src={icon5} alt={icon5} /></Zoom></a>
