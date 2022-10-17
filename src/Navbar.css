@@ -24,6 +24,12 @@ nav{
     justify-content: flex-start;
     align-items: center;
 }
+.logoContainer2{
+    min-height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .linksContainer{
     width: 60%;
     min-height: 10vh;
@@ -38,6 +44,10 @@ nav{
     display: flex;
     justify-content: flex-end;
     align-items: center;
+}
+.sociallinksContainer>a>img{
+    width: 50px;
+    height: 50px;
 }
 span{
     margin: 10px;
@@ -85,6 +95,14 @@ span:hover{
     position: absolute;
     z-index: 2;
 }
+@media (min-aspect-ratio: 5/2) {
+    .logoContainer2{
+        margin: 10px 0;
+    }
+    .sociallinksContainer>a>img{
+        margin: 10px 0;
+    }
+}
 @media only screen and (max-width:768px){
     nav{
         z-index: 3;
@@ -129,6 +147,12 @@ span:hover{
         width: 180px;
         height: auto;
     }
+    .sociallinksContainer>a>img{
+        display: flex;
+        align-self: center;
+        width: 75px;
+        height: 75px;
+    }
 }
 @media only screen and (min-width: 2881px){
     *{
@@ -144,5 +168,11 @@ span:hover{
         margin: 0 40px;
         width: 240px;
         height: auto;
+    }
+    .sociallinksContainer>a>img{
+        display: flex;
+        align-self: center;
+        width: 100px;
+        height: 100px;
     }
 }
