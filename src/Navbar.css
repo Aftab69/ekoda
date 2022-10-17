@@ -144,14 +144,14 @@ span:hover{
     }
     #logoImage{
         margin: 0 20px;
-        width: 180px;
+        width: 170px;
         height: auto;
     }
     .sociallinksContainer>a>img{
         display: flex;
         align-self: center;
-        width: 75px;
-        height: 75px;
+        width: 70px;
+        height: 70px;
     }
 }
 @media only screen and (min-width: 2881px){
