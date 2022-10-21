@@ -108,7 +108,7 @@ body{
 @media only screen and (max-width:1080px){
     .homepageContainer>video{
         width: 200%;
-        height: 90vh;
+        height: 85vh;
         object-fit: contain;
         background: rgba(0, 0, 0, 0.747);
     }
