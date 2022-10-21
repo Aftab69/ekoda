@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import "./Projectsmobile.css"
 import ReactPlayer from "react-player"
 import useMediaQuery from "./useMediaQuery";
@@ -26,7 +27,7 @@ const Projectsmobile = () => {
           <Zoom><ReactPlayer className='eachVideoMobile' url='https://www.youtube.com/watch?v=s2xr1_Pr_6U' controls width="320px" height="200px"/></Zoom>
           </>
          }
-         <a href='https://www.youtube.com/channel/UCnWLao6UvXoNSupz5jiDMiA' target="_blank" rel="noreferrer"><button>View More</button></a>
+         <Link to='/musicvideos'><button>View More</button></Link>
         </div>  
       </div>
   )

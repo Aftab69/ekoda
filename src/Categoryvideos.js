@@ -3,9 +3,11 @@ import "./Categoryvideos.css"
 import ReactPlayer from 'react-player/youtube'
 import Zoom from 'react-reveal/Zoom';
 import { Link } from 'react-router-dom';
-import logo from "./Images/logo.png"
+import logo from "./Images/logo.png";
+import useMediaQuery from "./useMediaQuery";
 
 const Musicvideos = (props) => {
+  const matches = useMediaQuery("(min-width: 768px)");
   const [ youtubeUrls, setyoutubeUrls ] = useState([])
   const [ heading, setHeading ] = useState("")
   useEffect(()=>(
@@ -32,7 +34,10 @@ const Musicvideos = (props) => {
       </div>
       <div className='categoryvideosContent'>
         {youtubeUrls.map((each)=>(
-          <Zoom><ReactPlayer className='eachCategoryVideo' url={each} controls width="768px" height="580px" /></Zoom>
+          (matches) ?
+          <><Zoom><ReactPlayer className='eachCategoryVideo' url={each} controls width="768px" height="580px" /></Zoom></>
+          :
+          <><Zoom><ReactPlayer className='eachCategoryVideo' url={each} controls width="320px" height="180px" /></Zoom></>
         ))}
       </div>
     </div>
