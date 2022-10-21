@@ -110,7 +110,7 @@ body{
         width: 200%;
         height: 85vh;
         object-fit: contain;
-        background: rgba(0, 0, 0, 0.747);
+        background: rgba(0, 0, 0, 0.5);
     }
     .homepageContainer{
         background-image: url("./Images/homepagebackground.jpg");
