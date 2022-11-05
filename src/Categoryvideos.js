@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import { Helmet } from "react-helmet";
 import "./Categoryvideos.css"
 import ReactPlayer from 'react-player/youtube'
 import Zoom from 'react-reveal/Zoom';
@@ -20,6 +21,11 @@ const Musicvideos = (props) => {
   ),[props])
   return (
     <>
+    <Helmet>
+        <title>Ekoda Productions | {heading}</title>
+        <meta name="description" content="Videos produced by Ekoda Productions." />
+        <meta name="keywords" content="ekoda, ekoda productions, production house, film making, documentaries, music video shoots, ad shoots, cinematography, script writing" />
+    </Helmet>
     <div className='categoryvideosBackground'>
       <div className='categoryvideosHeading'>
         <Link to="/"><img id='logoImage' className='logoImage' src={logo} alt={logo}/></Link>
