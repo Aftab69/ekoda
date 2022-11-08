@@ -1,18 +1,18 @@
 import React from 'react'
 import "./Projects.css"
-import Youtube from "react-youtube";
-import Zoom from 'react-reveal/Zoom';
-import { Link } from 'react-router-dom';
+// import Youtube from "react-youtube";
+// import Zoom from 'react-reveal/Zoom';
+// import { Link } from 'react-router-dom';
 
 const Projects = (props) => {
-  const opts = {
-    height: '480',
-    width: '720',
-    playerVars: {
-      // https://developers.google.com/youtube/player_parameters
-      autoplay: 0,
-    },
-  };
+  // const opts = {
+  //   height: '480',
+  //   width: '720',
+  //   playerVars: {
+  //     // https://developers.google.com/youtube/player_parameters
+  //     autoplay: 0,
+  //   },
+  // };
   
   return (
     <>
