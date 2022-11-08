@@ -43,7 +43,7 @@ const Navbar = (props) => {
     <>
         <nav id='home'>
           <div className='logoContainer'>
-            <li smooth to="#home" style={{textDecoration:"none"}}><div className='logoContainer2'><img id='logoImage' src={logo} alt={logo} /></div></li>
+            <li style={{textDecoration:"none"}}><div className='logoContainer2'><img id='logoImage' src={logo} alt={logo} /></div></li>
           </div>
           <div className='linksContainer'>
             <li onClick={()=>scrollToSection(props.services)} style={{textDecoration:"none"}}><span>SERVICES</span></li>
@@ -70,10 +70,10 @@ const Navbar = (props) => {
         </nav>
         {(active===true) ?
         <div className='hamburgermenuContainer' id='hamburger'>
-          <li smooth to="#services" onClick={()=>{scrollToSectionForMobile(props.services);setActive(false);revertHamburger()}} style={{textDecoration:"none",color:"white"}}><p>SERVICES</p></li>
-          <li smooth to="#projects" onClick={()=>{scrollToSectionForMobile(props.projects);setActive(false);revertHamburger()}} style={{textDecoration:"none",color:"white"}}><p>PROJECTS</p></li>
-          <li smooth to="#about" onClick={()=>{scrollToSectionForMobile(props.about);setActive(false);revertHamburger()}} style={{textDecoration:"none",color:"white"}}><p>ABOUT</p></li>
-          <li smooth to="#contact" onClick={()=>{scrollToSectionForMobile(props.contact);setActive(false);revertHamburger()}} style={{textDecoration:"none",color:"white"}}><p>CONTACT</p></li>
+          <li onClick={()=>{scrollToSectionForMobile(props.services);setActive(false);revertHamburger()}} style={{textDecoration:"none",color:"white"}}><p>SERVICES</p></li>
+          <li onClick={()=>{scrollToSectionForMobile(props.projects);setActive(false);revertHamburger()}} style={{textDecoration:"none",color:"white"}}><p>PROJECTS</p></li>
+          <li onClick={()=>{scrollToSectionForMobile(props.about);setActive(false);revertHamburger()}} style={{textDecoration:"none",color:"white"}}><p>ABOUT</p></li>
+          <li onClick={()=>{scrollToSectionForMobile(props.contact);setActive(false);revertHamburger()}} style={{textDecoration:"none",color:"white"}}><p>CONTACT</p></li>
         </div>
         :
         <>
