@@ -21,7 +21,7 @@ const Projects = (props) => {
       <div id='projects' className='projectspageContainer' ref={props.projects}>
         <div className='projectspageHeading'><span>OUR PROJECTS</span></div>
         <div className='videosContainer'>
-            <div className='videoCategoryHeading'><p>Music Videos :</p></div>
+            {/* <div className='videoCategoryHeading'><p>Music Videos :</p></div>
             <div className='videosOuterContainer'>
               <div className='videosInnerContainer' id='videosofbutton1'>
                   <Zoom><Youtube className='eachVideo' videoId='-bpQpsO7mWs' opts={opts} /></Zoom>
@@ -59,7 +59,7 @@ const Projects = (props) => {
                 <Zoom><Youtube className='eachVideo' videoId='H2UnUAGWGak' opts={opts} /></Zoom>
               </div>   
               <Link style={{textDecoration:"none"}} to="/behindthescenes" target="_blank"><button name="button5" id="button5">View more</button></Link>
-            </div>      
+            </div>       */}
         </div>
       </div>
     </>
