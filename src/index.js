@@ -1,12 +1,12 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import { hydrate, render } from "react-dom";
 import './index.css';
 import App from './App';
 import { BrowserRouter } from 'react-router-dom';
 import { Routes, Route } from 'react-router-dom';
 import Categoryvideos from './Categoryvideos';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const rootElement = document.getElementById("root");
 
 const musicVideos = [
     'https://youtu.be/-bpQpsO7mWs',
@@ -48,7 +48,7 @@ const pageheading3 = "FASHION FILMS"
 const pageheading4 = "SHORT / DOCUMENTARY / TRAVEL FILMS"
 const pageheading5 = "BEHIND THE SCENES"
 
-root.render(
+const APP = (
     <BrowserRouter>
         <Routes>
             <Route exact path='/' element={<App />} />
@@ -60,3 +60,9 @@ root.render(
         </Routes>
     </BrowserRouter>
 );
+
+if (rootElement.hasChildNodes()) {
+    hydrate(APP, rootElement);
+  } else {
+    render(APP, rootElement);
+  }
