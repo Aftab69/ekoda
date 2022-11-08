@@ -51,12 +51,12 @@ const pageheading5 = "BEHIND THE SCENES"
 const APP = (
     <BrowserRouter>
         <Routes>
-            <Route exact path='/' element={<App />} />
-            <Route exact path='/musicvideos' element={<Categoryvideos data={musicVideos} pageheading={pageheading1} />}/>
-            <Route exact path='/adfilms' element={<Categoryvideos data={adFilms} pageheading={pageheading2} />}/>
-            <Route exact path='/fashionfilms' element={<Categoryvideos data={fashionFilms} pageheading={pageheading3} />}/>
-            <Route exact path='/shortdocumentarytravelfilms' element={<Categoryvideos data={shortFilms} pageheading={pageheading4} />}/>
-            <Route exact path='/behindthescenes' element={<Categoryvideos data={behindTheScenes} pageheading={pageheading5} />}/>
+            <Route path='/' element={<App />} />
+            <Route path='/musicvideos' element={<Categoryvideos data={musicVideos} pageheading={pageheading1} />}/>
+            <Route path='/adfilms' element={<Categoryvideos data={adFilms} pageheading={pageheading2} />}/>
+            <Route path='/fashionfilms' element={<Categoryvideos data={fashionFilms} pageheading={pageheading3} />}/>
+            <Route path='/shortdocumentarytravelfilms' element={<Categoryvideos data={shortFilms} pageheading={pageheading4} />}/>
+            <Route path='/behindthescenes' element={<Categoryvideos data={behindTheScenes} pageheading={pageheading5} />}/>
         </Routes>
     </BrowserRouter>
 );
