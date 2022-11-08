@@ -5,10 +5,10 @@ import ReactPlayer from "react-player"
 import useMediaQuery from "./useMediaQuery";
 import Zoom from 'react-reveal/Zoom';
 
-const Projectsmobile = () => {
+const Projectsmobile = (props) => {
   const matches = useMediaQuery("(min-width: 480px)");
   return (
-    <div className='projectsmobilepageContainer' id='projects'>
+    <div className='projectsmobilepageContainer' id='projects' ref={props.projects}>
       <div className='projectsmobilepageHeading'>
         <p>OUR PROJECTS</p>
       </div>

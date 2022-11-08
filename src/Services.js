@@ -3,11 +3,11 @@ import "./Services.css"
 import useMediaQuery from "./useMediaQuery";
 import Zoom from 'react-reveal/Zoom';
 
-const Services = () => {
+const Services = (props) => {
   const matches = useMediaQuery("(min-width: 769px)");
   return (
     <>
-    <div id='services' className='servicespageContainer'>
+    <div id='services' className='servicespageContainer' ref={props.services}>
       <div className='servicespageHeading'><p>OUR SERVICES</p></div>
       <div className='servicespageMaincontent'>
         <div className='servicespageInnercontent'>

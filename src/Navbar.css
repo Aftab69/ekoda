@@ -12,6 +12,9 @@ nav{
     font-family: 'Saira Condensed', sans-serif;
     font-size: 1.2rem;
 }
+li{
+    list-style: none;
+}
 #logoImage{
     width: 120px;
     height: auto;

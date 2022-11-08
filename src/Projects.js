@@ -4,7 +4,7 @@ import Youtube from "react-youtube";
 import Zoom from 'react-reveal/Zoom';
 import { Link } from 'react-router-dom';
 
-const Projects = () => {
+const Projects = (props) => {
   const opts = {
     height: '480',
     width: '720',
@@ -18,7 +18,7 @@ const Projects = () => {
     <>
     <div className='emptydivprojectspage'>
     </div>
-      <div id='projects' className='projectspageContainer'>
+      <div id='projects' className='projectspageContainer' ref={props.projects}>
         <div className='projectspageHeading'><span>OUR PROJECTS</span></div>
         <div className='videosContainer'>
             <div className='videoCategoryHeading'><p>Music Videos :</p></div>

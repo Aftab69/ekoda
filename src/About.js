@@ -3,10 +3,10 @@ import "./About.css"
 import Zoom from 'react-reveal/Zoom'
 
 
-const About = () => {
+const About = (props) => {
   return (
     <>
-    <div id='about'>
+    <div id='about' ref={props.about}>
       <div className='aboutpageContainer1' id='background1'>
         <div className='aboutpageHeading'><span>ABOUT US</span></div>
         <div className='aboutpageText'>

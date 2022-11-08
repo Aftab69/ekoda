@@ -1,12 +1,27 @@
 import React, { useState } from 'react'
-import { HashLink } from 'react-router-hash-link';
 import "./Navbar.css"
 import logo from "./Images/logo.png"
 import facebook from "./Images/facebookicon.png"
 import instagram from "./Images/instagramicon.png"
 import whatsapp from "./Images/whatsappicon.png"
 
-const Navbar = () => {
+const Navbar = (props) => {
+
+  const scrollToSection = (elementRef) =>{
+    window.scrollTo({
+      top: elementRef.current.offsetTop,
+      behavior: "smooth"
+    })
+    console.log(elementRef.current.offsetTop)
+  }
+  const scrollToSectionForMobile = (elementRef) =>{
+    window.scrollTo({
+      top: elementRef.current.offsetTop-320,
+      behavior: "smooth"
+    })
+    console.log(elementRef.current.offsetTop)
+  }
+
   const [ active, setActive ] = useState(false)
   const handleHamburger = () =>{
     setActive(true)
@@ -28,13 +43,13 @@ const Navbar = () => {
     <>
         <nav id='home'>
           <div className='logoContainer'>
-            <HashLink smooth to="#home" style={{textDecoration:"none"}}><div className='logoContainer2'><img id='logoImage' src={logo} alt={logo} /></div></HashLink>
+            <li smooth to="#home" style={{textDecoration:"none"}}><div className='logoContainer2'><img id='logoImage' src={logo} alt={logo} /></div></li>
           </div>
           <div className='linksContainer'>
-            <HashLink smooth to="#services" style={{textDecoration:"none"}}><span>SERVICES</span></HashLink>
-            <HashLink smooth to="#projects" style={{textDecoration:"none"}}><span>PROJECTS</span></HashLink>
-            <HashLink smooth to="#about" style={{textDecoration:"none"}}><span>ABOUT</span></HashLink>
-            <HashLink smooth to="#contact" style={{textDecoration:"none"}}><span>CONTACT</span></HashLink>
+            <li onClick={()=>scrollToSection(props.services)} style={{textDecoration:"none"}}><span>SERVICES</span></li>
+            <li onClick={()=>scrollToSection(props.projects)} style={{textDecoration:"none"}}><span>PROJECTS</span></li>
+            <li onClick={()=>scrollToSection(props.about)} style={{textDecoration:"none"}}><span>ABOUT</span></li>
+            <li onClick={()=>scrollToSection(props.contact)} style={{textDecoration:"none"}}><span>CONTACT</span></li>
           </div>
           <div className='sociallinksContainer'>
             <a href="https://www.facebook.com/ekodaproductions" target="_blank" rel="noreferrer"><img src={facebook} alt={facebook} /></a>
@@ -55,10 +70,10 @@ const Navbar = () => {
         </nav>
         {(active===true) ?
         <div className='hamburgermenuContainer' id='hamburger'>
-          <HashLink smooth to="#services" onClick={()=>{setActive(false);revertHamburger()}} style={{textDecoration:"none",color:"white"}}><p>SERVICES</p></HashLink>
-          <HashLink smooth to="#projects" onClick={()=>{setActive(false);revertHamburger()}} style={{textDecoration:"none",color:"white"}}><p>PROJECTS</p></HashLink>
-          <HashLink smooth to="#about" onClick={()=>{setActive(false);revertHamburger()}} style={{textDecoration:"none",color:"white"}}><p>ABOUT</p></HashLink>
-          <HashLink smooth to="#contact" onClick={()=>{setActive(false);revertHamburger()}} style={{textDecoration:"none",color:"white"}}><p>CONTACT</p></HashLink>
+          <li smooth to="#services" onClick={()=>{scrollToSectionForMobile(props.services);setActive(false);revertHamburger()}} style={{textDecoration:"none",color:"white"}}><p>SERVICES</p></li>
+          <li smooth to="#projects" onClick={()=>{scrollToSectionForMobile(props.projects);setActive(false);revertHamburger()}} style={{textDecoration:"none",color:"white"}}><p>PROJECTS</p></li>
+          <li smooth to="#about" onClick={()=>{scrollToSectionForMobile(props.about);setActive(false);revertHamburger()}} style={{textDecoration:"none",color:"white"}}><p>ABOUT</p></li>
+          <li smooth to="#contact" onClick={()=>{scrollToSectionForMobile(props.contact);setActive(false);revertHamburger()}} style={{textDecoration:"none",color:"white"}}><p>CONTACT</p></li>
         </div>
         :
         <>

@@ -12,7 +12,7 @@ import icon8 from "./Images/locationicon.png"
 import icon9 from "./Images/emaillogo.png"
 import icon10 from "./Images/calllogo.png"
 
-const Contact = () => {
+const Contact = (props) => {
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -30,7 +30,7 @@ const Contact = () => {
   };
   return (
     <>
-      <div className='contactpageContainer' id='contact'>
+      <div className='contactpageContainer' id='contact' ref={props.contact}>
         <div className='contactpageHeading'><p>CONTACT US</p></div>
           <Zoom>
             <div className='contactpageForm'>
