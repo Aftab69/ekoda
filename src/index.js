@@ -1,13 +1,12 @@
 import React from 'react';
-import { hydrate, render } from 'react-dom';
-import loadScripts from 'snapshotify';
+import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import { BrowserRouter } from 'react-router-dom';
 import { Routes, Route } from 'react-router-dom';
 import Categoryvideos from './Categoryvideos';
 
-const rootElement = document.getElementById('root');
+const root = ReactDOM.createRoot(document.getElementById('root'));
 
 const musicVideos = [
     'https://youtu.be/-bpQpsO7mWs',
@@ -49,7 +48,7 @@ const pageheading3 = "FASHION FILMS"
 const pageheading4 = "SHORT / DOCUMENTARY / TRAVEL FILMS"
 const pageheading5 = "BEHIND THE SCENES"
 
-const APP = (
+root.render(
     <BrowserRouter>
         <Routes>
             <Route exact path='/' element={<App />} />
@@ -60,10 +59,4 @@ const APP = (
             <Route exact path='/behindthescenes' element={<Categoryvideos data={behindTheScenes} pageheading={pageheading5} />}/>
         </Routes>
     </BrowserRouter>
-)
-
-if (rootElement.hasChildNodes()) {
-  loadScripts().then(() => hydrate(APP, rootElement));
-} else {
-  render(APP, rootElement);
-}
+);
