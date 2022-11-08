@@ -28,7 +28,7 @@ const Musicvideos = (props) => {
     </Helmet>
     <div className='categoryvideosBackground'>
       <div className='categoryvideosHeading'>
-          <img id='logoImage' className='logoImage' src={logo} alt={logo}/>
+          <Link to="/"><img id='logoImage' className='logoImage' src={logo} alt={logo}/></Link>
         <p>{heading}</p>
       </div>
       <div className='filterContainer'>

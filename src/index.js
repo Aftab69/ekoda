@@ -1,12 +1,12 @@
 import React from 'react';
-import { hydrate, render } from "react-dom";
+import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import { BrowserRouter } from 'react-router-dom';
 import { Routes, Route } from 'react-router-dom';
 import Categoryvideos from './Categoryvideos';
 
-const rootElement = document.getElementById("root");
+const root = ReactDOM.createRoot(document.getElementById('root'));
 
 const musicVideos = [
     'https://youtu.be/-bpQpsO7mWs',
@@ -48,21 +48,15 @@ const pageheading3 = "FASHION FILMS"
 const pageheading4 = "SHORT / DOCUMENTARY / TRAVEL FILMS"
 const pageheading5 = "BEHIND THE SCENES"
 
-const APP = (
+root.render(
     <BrowserRouter>
         <Routes>
-            <Route path='/' element={<App />} />
-            <Route path='/musicvideos' element={<Categoryvideos data={musicVideos} pageheading={pageheading1} />}/>
-            <Route path='/adfilms' element={<Categoryvideos data={adFilms} pageheading={pageheading2} />}/>
-            <Route path='/fashionfilms' element={<Categoryvideos data={fashionFilms} pageheading={pageheading3} />}/>
-            <Route path='/shortdocumentarytravelfilms' element={<Categoryvideos data={shortFilms} pageheading={pageheading4} />}/>
-            <Route path='/behindthescenes' element={<Categoryvideos data={behindTheScenes} pageheading={pageheading5} />}/>
+            <Route exact path='/' element={<App />} />
+            <Route exact path='/musicvideos' element={<Categoryvideos data={musicVideos} pageheading={pageheading1} />}/>
+            <Route exact path='/adfilms' element={<Categoryvideos data={adFilms} pageheading={pageheading2} />}/>
+            <Route exact path='/fashionfilms' element={<Categoryvideos data={fashionFilms} pageheading={pageheading3} />}/>
+            <Route exact path='/shortdocumentarytravelfilms' element={<Categoryvideos data={shortFilms} pageheading={pageheading4} />}/>
+            <Route exact path='/behindthescenes' element={<Categoryvideos data={behindTheScenes} pageheading={pageheading5} />}/>
         </Routes>
     </BrowserRouter>
 );
-
-if (rootElement.hasChildNodes()) {
-    hydrate(APP, rootElement);
-  } else {
-    render(APP, rootElement);
-  }
