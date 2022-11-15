@@ -13,13 +13,6 @@ body{
     display: flex;
     align-self: center;
 }
-.homevideoContainer2{
-    border: 1px solid red;
-    width: 100%;
-    min-height: 90vh;
-    display: flex;
-    align-self: center;
-}
 .showreelButtonContainer{
     box-sizing: border-box;
     position: absolute;
