@@ -71,7 +71,7 @@ button:hover{
 .eachVideo{
     margin: 10px;
 }
-@media only screen and (min-width:769px) and (max-width:1920px){
+@media only screen and (min-width:1200px) and (max-width:1920px){
     .projectspageContainer{
         margin-top: 200px;
     }
