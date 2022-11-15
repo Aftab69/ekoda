@@ -48,7 +48,7 @@ const Home = () => {
   return (
     <>
     {(size.x > breakpoint) ?
-      <>
+      <div>
       <div id='homepage' className='homepageContainer'>
       <ReactPlayer className="homevideoContainer" style={{pointerEvents:"none"}} url={showreel} width="100%" height="100%" muted playing={true} loop />
      </div>
@@ -58,16 +58,16 @@ const Home = () => {
      <div className='scrolltotopContainer'>
       <img onClick={handleTop} src={icon1} alt={icon1} />
      </div>
-     </>
+     </div>
      :
-     <>
+     <div>
       <div id='homepage' className='homepageContainer'>
       <ReactPlayer className="homevideoContainer2" style={{pointerEvents:"none"}} url={showreelmobile} width="100%" height="100%" muted playing={true} loop />
       </div>
       <div className='showreelButtonContainerMobile'>
       <a href='https://www.youtube.com/watch?v=siXxsNosnGs' target="_blank" rel="noreferrer"><button id='showreelButton'>WATCH SHOWREEL</button></a>
       </div>
-    </>
+    </div>
     }
        
     { loading === true ?
