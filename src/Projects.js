@@ -8,8 +8,8 @@ const Projects = (props) => {
   
   return (
     <>
-    {/* <div className='emptydivprojectspage'>
-    </div> */}
+    <div className='emptydivprojectspage'>
+    </div>
       <div id='projects' className='projectspageContainer' ref={props.projects}>
         <div className='projectspageHeading'><span>OUR PROJECTS</span></div>
         <div className='videosContainer'>
