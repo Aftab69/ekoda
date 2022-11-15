@@ -6,7 +6,6 @@
     height: 10px;
 }
 .projectspageContainer{
-    margin-top: 200px;
     width: 100%;
     min-height: 100vh;
     padding-bottom: 10px;
@@ -71,6 +70,11 @@ button:hover{
 }
 .eachVideo{
     margin: 10px;
+}
+@media only screen and (min-width:769px) and (max-width:1920px){
+    .projectspageContainer{
+        margin-top: 200px;
+    }
 }
 @media only screen and (min-width:480px) and (max-width:768px){
     .eachVideo{
