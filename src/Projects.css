@@ -2,9 +2,8 @@
     box-sizing: border-box;
 }
 .emptydivProjectspage{
-    border: 1px solid red;
     width: 100%;
-    height: 200px;
+    height: 10px;
 }
 .projectspageContainer{
     margin-top: 200px;
