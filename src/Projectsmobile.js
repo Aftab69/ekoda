@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom';
 import "./Projectsmobile.css"
 import ReactPlayer from "react-player"
-// import useMediaQuery from "./useMediaQuery";
 import Zoom from 'react-reveal/Zoom';
 
 const Projectsmobile = (props) => {

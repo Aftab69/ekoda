@@ -5,7 +5,6 @@ import ReactPlayer from 'react-player/youtube'
 import Zoom from 'react-reveal/Zoom';
 import { Link } from 'react-router-dom';
 import logo from "./Images/logo.png";
-// import useMediaQuery from "./useMediaQuery";
 
 const Musicvideos = (props) => {
 

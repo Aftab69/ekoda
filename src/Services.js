@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import "./Services.css"
-// import useMediaQuery from "./useMediaQuery";
 import Zoom from 'react-reveal/Zoom';
 
 const Services = (props) => {

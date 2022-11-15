@@ -1,9 +1,7 @@
 import React ,{ useState, useEffect } from 'react'
 import ReactPlayer from "react-player"
 import "./Home.css"
-// import useMediaQuery from "./useMediaQuery";
 import showreel from "./Images/Showreel.mp4"
-// import showreelmobile from "./Images/showreelmobile.mp4"
 import loadinggif from "./Images/loading.gif"
 import logo from "./Images/logo.png"
 import icon1 from "./Images/scrolltopicon.png"
