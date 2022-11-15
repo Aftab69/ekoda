@@ -107,7 +107,7 @@ body{
         z-index: -3;
     }
 }
-@media only screen and (max-width:1080px){
+@media only screen and (max-width:768px){
     .homepageContainer{
         background-image: url("./Images/homepagebackground.jpg");
         background-size: cover;
@@ -115,6 +115,9 @@ body{
         overflow: hidden;
         display: flex;
         justify-content: center;
+    }
+    .scrolltotopContainer{
+        display: none;
     }
 }
 @media only screen and (min-width: 1921px) and (max-width: 2880px){
