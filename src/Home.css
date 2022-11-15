@@ -127,6 +127,12 @@ body{
         display: flex;
         justify-content: center;
     }
+    .showreelButtonContainer>a>button{
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+    .showreelButtonContainer>a>button:hover{
+        background-color: rgba(0, 0, 0, 0.9);
+    }
 }
 @media only screen and (min-width: 1921px) and (max-width: 2880px){
     .loadingpageContainer>img:nth-child(2){
