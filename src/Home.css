@@ -8,6 +8,7 @@ body{
 }
 .homevideoContainer{
     background-color: black;
+    margin-bottom: 10vh;
     width: 100%;
     min-height: 90vh;
     display: flex;
