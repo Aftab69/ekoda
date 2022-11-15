@@ -1,18 +1,26 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import "./Services.css"
-import useMediaQuery from "./useMediaQuery";
+// import useMediaQuery from "./useMediaQuery";
 import Zoom from 'react-reveal/Zoom';
 
 const Services = (props) => {
-  const matches = useMediaQuery("(min-width: 769px)");
+  const breakpoint = 768;
+  const [size, setSize] = useState({
+    x: window.innerWidth
+  });
+  const updateSize = () =>
+    setSize({
+      x: window.innerWidth
+    });
+  useEffect(() => (window.onresize = updateSize), []);
   return (
     <>
     <div id='services' className='servicespageContainer' ref={props.services}>
       <div className='servicespageHeading'><p>OUR SERVICES</p></div>
       <div className='servicespageMaincontent'>
-        <div className='servicespageInnercontent'>
-          {(matches) ?
-          <>
+          {(size.x > breakpoint) ?
+          <div>
+            <div className='servicespageInnercontent'>
             <Zoom><div className='innerContainer' id='innerContainer1'></div></Zoom>
             <Zoom>
               <div className='innerContainer' id='innerContainer2'>
@@ -32,9 +40,11 @@ const Services = (props) => {
             <p>When it comes to Post-Production, you can count on us to continue working until it's exactly what you're looking for while staying within your timeline and budget. If you have questions, contact us today.</p>
           </div>
           </Zoom>
-          </>
+          </div>
+          </div>
           :
-          <>
+          <div className='servicespageInnercontent'>
+          <div>
             <Zoom><div className='innerContainer' id='innerContainer1'></div></Zoom>
             <Zoom><div className='innerContainer' id='innerContainer4'>
             <p>PRE-PRODUCTION</p>
@@ -54,9 +64,9 @@ const Services = (props) => {
             <p>When it comes to Post-Production, you can count on us to continue working until it's exactly what you're looking for while staying within your timeline and budget. If you have questions, contact us today.</p>
           </div>
           </Zoom>
-          </>
+          </div>
+          </div>
           }    
-        </div>
       </div>
     </div>
     </>

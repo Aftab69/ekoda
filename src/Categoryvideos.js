@@ -5,13 +5,24 @@ import ReactPlayer from 'react-player/youtube'
 import Zoom from 'react-reveal/Zoom';
 import { Link } from 'react-router-dom';
 import logo from "./Images/logo.png";
-import useMediaQuery from "./useMediaQuery";
+// import useMediaQuery from "./useMediaQuery";
 
 const Musicvideos = (props) => {
-  const matches = useMediaQuery("(min-width: 768px)");
+
+  const breakpoint = 768;
+  const [size, setSize] = useState({
+    x: window.innerWidth
+  });
+  const updateSize = () =>
+    setSize({
+      x: window.innerWidth
+    });
+
   const [ youtubeUrls, setyoutubeUrls ] = useState([])
   const [ heading, setHeading ] = useState("")
   useEffect(()=>(
+    // eslint-disable-next-line
+    window.onresize = updateSize,
     // eslint-disable-next-line
     setyoutubeUrls(props.data),
     // eslint-disable-next-line
@@ -40,10 +51,14 @@ const Musicvideos = (props) => {
       </div>
       <div className='categoryvideosContent'>
         {youtubeUrls.map((each)=>(
-          (matches) ?
-          <><Zoom><ReactPlayer className='eachCategoryVideo' url={each} controls width="768px" height="580px" /></Zoom></>
+          (size.x > breakpoint) ?
+          <div>
+            <Zoom><ReactPlayer className='eachCategoryVideo' url={each} controls width="768px" height="580px" /></Zoom>
+          </div>
           :
-          <><Zoom><ReactPlayer className='eachCategoryVideo' url={each} controls width="320px" height="180px" /></Zoom></>
+          <div>
+            <Zoom><ReactPlayer className='eachCategoryVideo' url={each} controls width="320px" height="180px" /></Zoom>
+          </div>
         ))}
       </div>
     </div>
