@@ -108,16 +108,19 @@ body{
     }
 }
 @media only screen and (max-width:768px){
-    .homepageContainer{
+    /* .homepageContainer{
         background-image: url("./Images/homepagebackground.jpg");
         background-size: cover;
         height: 82.5vh;
         overflow: hidden;
         display: flex;
         justify-content: center;
-    }
+    } */
     .scrolltotopContainer{
         display: none;
+    }
+    .homevideoContainer{
+        background-image: url("./Images/homepagebackground.jpg");
     }
 }
 @media only screen and (min-width: 1921px) and (max-width: 2880px){
