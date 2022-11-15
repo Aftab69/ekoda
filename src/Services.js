@@ -43,8 +43,8 @@ const Services = (props) => {
           </div>
           </div>
           :
-          <div className='servicespageInnercontent'>
           <div>
+            <div className='servicespageInnercontent'>
             <Zoom><div className='innerContainer' id='innerContainer1'></div></Zoom>
             <Zoom><div className='innerContainer' id='innerContainer4'>
             <p>PRE-PRODUCTION</p>
