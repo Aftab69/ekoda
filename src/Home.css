@@ -7,8 +7,7 @@ body{
     font-family: 'Inter Tight', sans-serif;
 }
 .homevideoContainer{
-    background-color: black;
-    margin-bottom: 10vh;
+    background: black;
     width: 100%;
     min-height: 90vh;
     display: flex;
@@ -83,6 +82,14 @@ body{
         position: sticky;
         top: 0;
         z-index: -3;
+    }
+    .homevideoContainer{
+        position: relative;
+        bottom: 10vh;
+        z-index: -4;
+    }
+    .homepageContainer{
+        background: black;
     }
 }
 @media only screen and (max-width:768px){
