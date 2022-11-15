@@ -1,4 +1,5 @@
 import React ,{ useState, useEffect } from 'react'
+import ReactPlayer from "react-player"
 import "./Home.css"
 // import useMediaQuery from "./useMediaQuery";
 import showreel from "./Images/Showreel.mp4"
@@ -49,7 +50,7 @@ const Home = () => {
     {(size.x > breakpoint) ?
       <div>
       <div id='homepage' className='homepageContainer'>
-      <video src={showreel} autoPlay loop muted />
+      <ReactPlayer className="homevideoContainer" style={{pointerEvents:"none"}} url={showreel} width="100%" height="auto" muted playing={true} loop />
      </div>
      <div className='showreelButtonContainer'>
         <a href='https://www.youtube.com/watch?v=siXxsNosnGs' target="_blank" rel="noreferrer"><button id='showreelButton'>WATCH SHOWREEL</button></a>
@@ -61,7 +62,7 @@ const Home = () => {
      :
      <div>
       <div id='homepage' className='homepageContainer'>
-      <video src={showreelmobile} autoPlay loop muted />
+      <ReactPlayer className="homevideoContainer2" style={{pointerEvents:"none"}} url={showreelmobile} width="100%" height="auto" muted playing={true} loop />
       </div>
       <div className='showreelButtonContainerMobile'>
       <a href='https://www.youtube.com/watch?v=siXxsNosnGs' target="_blank" rel="noreferrer"><button id='showreelButton'>WATCH SHOWREEL</button></a>
