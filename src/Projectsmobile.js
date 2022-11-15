@@ -16,28 +16,38 @@ const Projectsmobile = (props) => {
     });
   useEffect(() => (window.onresize = updateSize), []);
   return (
-    <div className='projectsmobilepageContainer' id='projects' ref={props.projects}>
+    <>
+        {(size.x > breakpoint) 
+          ?
+          <div>
+          <div className='projectsmobilepageContainer' id='projects' ref={props.projects}>
       <div className='projectsmobilepageHeading'>
         <p>OUR PROJECTS</p>
       </div>
       <div className='projectsmobilepageContent'>
-        {(size.x > breakpoint) 
-          ?
-          <div>
           <Zoom><ReactPlayer className='eachVideoMobile' url='https://www.youtube.com/watch?v=-bpQpsO7mWs' controls width="480px" height="360px" /></Zoom>
           <Zoom><ReactPlayer className='eachVideoMobile' url='https://www.youtube.com/watch?v=qWxFXk5CWJQ' controls width="480px" height="360px"/></Zoom>          
           <Zoom><ReactPlayer className='eachVideoMobile' url='https://www.youtube.com/watch?v=s2xr1_Pr_6U' controls width="480px" height="360px"/></Zoom>
-          </div>
+          <Link to='/musicvideos'><button>View More</button></Link>
+        </div>  
+      </div>
+      </div>
           :
           <div>
+          <div className='projectsmobilepageContainer' id='projects' ref={props.projects}>
+      <div className='projectsmobilepageHeading'>
+        <p>OUR PROJECTS</p>
+      </div>
+      <div className='projectsmobilepageContent'>
           <Zoom><ReactPlayer className='eachVideoMobile' url='https://www.youtube.com/watch?v=-bpQpsO7mWs' controls width="320px" height="200px" /></Zoom>
           <Zoom><ReactPlayer className='eachVideoMobile' url='https://www.youtube.com/watch?v=qWxFXk5CWJQ' controls width="320px" height="200px"/></Zoom>          
           <Zoom><ReactPlayer className='eachVideoMobile' url='https://www.youtube.com/watch?v=s2xr1_Pr_6U' controls width="320px" height="200px"/></Zoom>
-          </div>
-         }
-         <Link to='/musicvideos'><button>View More</button></Link>
+          <Link to='/musicvideos'><button>View More</button></Link>
         </div>  
       </div>
+      </div>
+         }
+         </>
   )
 }
 
