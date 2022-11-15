@@ -1,6 +1,11 @@
 *{
     box-sizing: border-box;
 }
+.emptydivprojectspage{
+    border: 1px solid red;
+    width: 100%;
+    height: 200px;
+}
 .projectspageContainer{
     width: 100%;
     min-height: 100vh;
@@ -66,13 +71,6 @@ button:hover{
 }
 .eachVideo{
     margin: 10px;
-}
-@media only screen and (min-width:769px) {
-    .emptydivprojectspage{
-        border: 1px solid red;
-        width: 100%;
-        height: 200px;
-}
 }
 @media only screen and (min-width:480px) and (max-width:768px){
     .eachVideo{
