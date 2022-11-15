@@ -50,7 +50,7 @@ const Home = () => {
     {(size.x > breakpoint) ?
       <div>
       <div id='homepage' className='homepageContainer'>
-      <ReactPlayer className="homevideoContainer" style={{pointerEvents:"none"}} url={showreel} width="100%" height="auto" muted playing={true} loop />
+      <ReactPlayer className="homevideoContainer" style={{pointerEvents:"none"}} url={showreel} width="100%" height="100%" muted playing={true} loop />
      </div>
      <div className='showreelButtonContainer'>
         <a href='https://www.youtube.com/watch?v=siXxsNosnGs' target="_blank" rel="noreferrer"><button id='showreelButton'>WATCH SHOWREEL</button></a>
